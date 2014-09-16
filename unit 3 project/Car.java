@@ -9,15 +9,18 @@ public class Car
     /** The feul efficiency of this car measured in miles per gallon (mp) */
     private double fuelEfficiency;
     
-    /**the fuel, measured in gallons, left in this car's tank
-    private double fuelEfficency;
+    /**the fuel, measured in gallons, left in this car's tank*/
+    private double fuelInTank;
     /**
      * constructor for car that specifies fuel efficiency
      */
-    public Car()
+    public Car(double efficiency)
     {
         // initialise instance variables
        // x = 0;
+       this.fuelEfficiency = efficiency;
+       this.fuelInTank = 0;
+       
     }
 
     /**
@@ -34,9 +37,11 @@ public class Car
     public void addGas(double gallons)
     {
         // put your code here
+        this.fuelInTank = this.fuelInTank +gallons;
         
     }
-    
+    
+
     /**
      * reduces the fuel in this car's tank based on the car's fuel efficiency andthe specified number of miles driven.
      *
@@ -46,22 +51,23 @@ public class Car
      * 
      * @param   miles the number of miles driven
      */
-    public void drive(double miles)
-    {
-        // put your code here
-        
-    }
     
     /**
      * returns the nimber of gallons of gas remaining in this car's tank
      *
      * @return the number of gallons of gas remaining in this car's tank
      */
-    public double getGasInTaqnk()
+    public double getGasInTank()
     {
-     return 0;        // put your code here
+     return  this.fuelInTank;        // put your code here
         
     }
+    
+    public void drive(double miles)
+    {
+        double gallonsBurned = miles / this.fuelEfficiency;
+        this.fuelInTank = this.fuelInTank - gallonsBurned;
 
 
+    }
 }
