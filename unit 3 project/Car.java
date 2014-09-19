@@ -22,7 +22,10 @@ public class Car
        this.fuelInTank = 0;
        
     }
-
+    
+    public void printer(String hi){
+        System.out.println(hi);
+    }
     /**
      * An example of a method - replace this comment with your own
      *    that describes the operation of the method
