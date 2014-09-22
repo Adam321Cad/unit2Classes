@@ -8,25 +8,21 @@ import javax.swing.JComponent;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class CarComponent extends JComponent
+public class TargetPart extends JComponent
 {
     /** description of instance variable x (add comment for each instance variable) */
 
     /**
      * Default constructor for objects of class hbvfd
      */
-    public void paintComponent(Graphics g)
+    public void paintTarget(Graphics g)
     {
         Graphics2D g2 = (Graphics2D) g;
         
-        Car car1 = new Car(0, 0);
-        int x = getWidth() - 60;
-        int y = getHeight() - 30;
+        Target target1 = new Target();
         
-        Car car2 = new Car(x, y);
         
-        car1.draw(g2);
-        car2.draw(g2);
+        target1.draw(g2);
     }
 
 }
