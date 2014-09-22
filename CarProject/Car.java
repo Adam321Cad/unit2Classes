@@ -31,8 +31,12 @@ public class Car
     public void draw(Graphics2D g2)
     {
         Rectangle body = new Rectangle(xLeft, yTop + 10, 60, 10);
-        Ellipse2D.Double frontTire = new Ellipse2D.Double(xLeft + 10, yTop + 20 ,100, 100);
+        Ellipse2D.Double frontTire = new Ellipse2D.Double(xLeft + 10, yTop + 20 ,10, 10);
         Ellipse2D.Double rearTire = new Ellipse2D.Double(xLeft + 40, yTop + 20, 10, 10);
+        
+        Ellipse2D.Double test = new Ellipse2D.Double(50,50, 15,15);
+        
+        
         
         // the bottom of the front windshield
         Point2D.Double r1 = new Point2D.Double(xLeft+10, yTop + 10);
@@ -53,6 +57,8 @@ public class Car
         g2.draw(frontWindshield);
         g2.draw(roofTop);
         g2.draw(rearWindshield);
+        
+        g2.draw(test);
 
 
 }
