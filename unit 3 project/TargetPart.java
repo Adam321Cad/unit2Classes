@@ -15,12 +15,13 @@ public class TargetPart extends JComponent
     /**
      * Default constructor for objects of class hbvfd
      */
-    public void paintTarget(Graphics g)
+    public void paintComponent(Graphics g)
     {
         Graphics2D g2 = (Graphics2D) g;
         
-        Target target1 = new Target();
-        
+        int x = getWidth() - 60;
+        int y = getHeight() - 30;
+        Target target1 = new Target(x,y);
         
         target1.draw(g2);
     }
