@@ -11,14 +11,6 @@ public class CityscapeViewer
     /**
      * main method for the program which creates and configures the frame for the program
      *
-     *
-    /**
-     * An example of a method - This method is what sets up the jframe and starts the loop to make the night day cycle
-     *
-     * 
-     * @post    This is the method that runs the entire program. If done correctly will draw a building with a skyr I LEFT OFF DOCUMENTING HERE!!!
-     * @param    y    description of parameter y
-     * @return    description of the return value
      */
     public static void main(String[] args)
     throws InterruptedException
