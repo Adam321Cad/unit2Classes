@@ -7,10 +7,10 @@ import java.awt.geom.Point2D;
 import java.awt.Color;
 
 /**
- * Write a description of class building1 here.
+ * Sets up the basic biulding with nightday versons of buildings and windows.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Adam Arato 
+ * @version 1
  */
 public class building1
 {
@@ -32,6 +32,19 @@ public class building1
         day = t;
     }
     
+    
+    /**
+     * This method can make a simple building with windows. This will take care of the night and day changes in the apearance of the buildings.
+     *
+     *
+     * @pre        It assumes that 7 parametears are sent into it. it also assumes that graphics and a jframe is made.and implemented.
+     *            
+     * @post    postconditions for the method
+     *            This method will make a building with windows. the colors will change depending on the time of day.
+     * @param    i need the demetions of the window as the x and y respectivly, then the building placement, x and y respectivly
+     * the width and height of the building along with the time of day.
+     * @return    no return value
+     */
     public void draw(Graphics2D g2){
         int win = 10;
         int loop = (height/140);

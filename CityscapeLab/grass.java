@@ -7,10 +7,10 @@ import java.awt.geom.Point2D;
 import java.awt.Color;
 
 /**
- * Write a description of class building1 here.
+ * This basically just makes a green box on the bottom of the screen that is the "grass"
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Adam Arato) 
+ * @version (2)
  */
 public class grass
 {
@@ -22,7 +22,14 @@ public class grass
         xfar = x;
         yfar = y;
     }
-    
+    /**
+     * It makes a grass at the bottom of the screen.
+     *
+     * @pre        a jframe
+     * @post    a it makes the grass for the city
+     * @param    this is the size of the window
+     * @return    no return value
+     */
     public void draw(Graphics2D g2){
             Rectangle2D.Double grass = new Rectangle2D.Double(0,500,2500,2500);
             g2.draw(grass);

@@ -7,10 +7,10 @@ import java.awt.geom.Point2D;
 import java.awt.Color;
 
 /**
- * Write a description of class building1 here.
+ * This class sets to baackground of the city.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Adam Arato) 
+ * @version (2)
  */
 public class sky
 {
@@ -24,6 +24,15 @@ public class sky
         day = t;
     }
     
+    /**
+     * This will make the sun and sky or the moon and night sky depending on the time of day
+     *
+     * @pre        A jframe and graphics2D
+     *            
+     * @post   you will have a sun or moon with a sky
+     * @param    you need to input size of the window and the time of day.
+     * @return    no return
+     */
     public void draw(Graphics2D g2){
             Rectangle2D.Double sky = new Rectangle2D.Double(0,0,xfar+200,yfar+200);
             g2.draw(sky);
